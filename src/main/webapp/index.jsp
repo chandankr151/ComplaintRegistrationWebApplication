@@ -9,25 +9,37 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Note Taker : Home Page</title>
-<%@include file="all_js_css.jsp"%>
+<title>RegisterComplaint Home Page</title>
 
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
-	<div class="container-fluid p-0 m-0">
+	<div class="container">
 
-		<%@include file="navbar.jsp"%>
-		
-		<br>
-		<div class="card py-10">
-			<img alt="notepad-Image" class="img-fluid mx-auto" style="max-width:400px" src="images/notepad.png">
-			<h1 class="text-primary text-uppercase text-center mt-3" >Start Taking Your Notes</h1>
-			
-			<div class="container text-center">
-				<button class="btn-outline-primary text-center" >Start Here</button>
-			</div>
-		</div>
+		<h1>Welcome to Home Page</h1>
+		<p>Complaint Registration Form</p>
+
+		<form action="RegisterComplaint.jsp" method="post">
+
+			<input type="submit" value="Register Complaint">
+		</form>
+
+		<form action="DisplayAllComplaint" method="post">
+			<input type="submit" value="Display Complaints">
+		</form>
+
+		<form action="displayComplaintById.jsp" method="post">
+			<input type="submit" value="Display Complaint by Id">
+		</form>
+
+		<form action="displayComplaintByTicketNo.jsp" method="post">
+			<input type="submit" value="Display Complaint by Ticket No">
+		</form>
+
+		<form action="UpdateStatusById.jsp" method="post">
+			<input type="submit" value="Close Complaint status by id">
+		</form>
 	</div>
 
 </body>

@@ -10,7 +10,7 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://localhost:3306/myhibernate</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/registerComplaint</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">govt</property>
 
@@ -19,7 +19,7 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 
-		<mapping class="com.entities.Note" />
+		<mapping class="com.entities.ComplaintRegister" />
 		<!-- <mapping class="com.hibernate.Address" /> -->
 				
 

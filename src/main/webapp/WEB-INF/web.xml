@@ -5,33 +5,64 @@
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
-		<servlet-name>SaveNoteServlet</servlet-name>
-		<display-name>SaveNoteServlet</display-name>
+		<servlet-name>RegisterComplaint</servlet-name>
+		<display-name>RegisterComplaint</display-name>
 		<description></description>
-		<servlet-class>com.servlets.SaveNoteServlet</servlet-class>
+		<servlet-class>com.servlets.RegisterComplaint</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>DeleteServlet</servlet-name>
-		<display-name>DeleteServlet</display-name>
+		<servlet-name>UpdateStatusById</servlet-name>
+		<display-name>UpdateStatusById</display-name>
 		<description></description>
-		<servlet-class>com.servlets.DeleteServlet</servlet-class>
+		<servlet-class>com.servlets.UpdateStatusById</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>UpdateServlet</servlet-name>
-		<display-name>UpdateServlet</display-name>
+		<servlet-name>DisplayAllComplaint</servlet-name>
+		<display-name>DisplayAllComplaint</display-name>
 		<description></description>
-		<servlet-class>com.servlets.UpdateServlet</servlet-class>
+		<servlet-class>com.servlets.DisplayAllComplaint</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DisplayComplaintById</servlet-name>
+		<display-name>DisplayComplaintById</display-name>
+		<description></description>
+		<servlet-class>com.servlets.DisplayComplaintById</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DisplayComplaintByTicketNo</servlet-name>
+		<display-name>DisplayComplaintByTicketNo</display-name>
+		<description></description>
+		<servlet-class>com.servlets.DisplayComplaintByTicketNo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CloseStatusById</servlet-name>
+		<display-name>CloseStatusById</display-name>
+		<description></description>
+		<servlet-class>com.servlets.CloseStatusById</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SaveNoteServlet</servlet-name>
-		<url-pattern>/SaveNoteServlet</url-pattern>
+		<servlet-name>RegisterComplaint</servlet-name>
+		<url-pattern>/RegisterComplaint</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>DeleteServlet</servlet-name>
-		<url-pattern>/DeleteServlet</url-pattern>
+		<servlet-name>UpdateStatusById</servlet-name>
+		<url-pattern>/UpdateStatusById</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>UpdateServlet</servlet-name>
-		<url-pattern>/UpdateServlet</url-pattern>
+		<servlet-name>DisplayAllComplaint</servlet-name>
+		<url-pattern>/DisplayAllComplaint</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DisplayComplaintById</servlet-name>
+		<url-pattern>/DisplayComplaintById</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DisplayComplaintByTicketNo</servlet-name>
+		<url-pattern>/DisplayComplaintByTicketNo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CloseStatusById</servlet-name>
+		<url-pattern>/CloseStatusById</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
